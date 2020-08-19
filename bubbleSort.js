@@ -1,4 +1,4 @@
-write('Bubble sorting');
+write('Bubble sort');
 
 function bubbleSort(inputArr) {
   const sortedArray = [];
@@ -23,4 +23,4 @@ function bubbleSort(inputArr) {
   return sortedArray;
 }
 
-expect(bubbleSort(unsortedArray)).toEqual(sortedArray);
+expect(bubbleSort(unsortedArray.slice())).toEqual(sortedArray);
