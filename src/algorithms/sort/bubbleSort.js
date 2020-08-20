@@ -1,6 +1,7 @@
-write('Bubble sort');
+document.write('<p>Bubble sort</p>');
 
 function bubbleSort(inputArr) {
+  console.log('Bubble sort input', inputArr.slice());
   const sortedArray = [];
   inputArr.forEach((elem, index) => {
     if (index === 0) {
@@ -20,7 +21,8 @@ function bubbleSort(inputArr) {
       }
     }
   });
+  console.log('Bubble sort output', sortedArray.slice());
   return sortedArray;
 }
 
-expect(bubbleSort(unsortedArray.slice())).toEqual(sortedArray);
+export default bubbleSort;

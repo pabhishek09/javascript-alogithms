@@ -1,4 +1,4 @@
-write('Merge sort');
+document.write('<p>Merge sort</p>');
 
 // [5, 7, 4, 6, 2, 9, 3] - Divide into two arrays from a median element
 // [5, 7, 4] [6, 2, 9, 3] - Break it down to smaller arrays 
@@ -39,4 +39,4 @@ function stitch(stichLeft, stichRight) {
   return results.concat(stichLeft, stichRight);
 }
 
-expect(mergeSort(unsortedArray.slice())).toEqual(sortedArray);
+export default mergeSort;

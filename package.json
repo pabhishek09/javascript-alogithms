@@ -1,0 +1,31 @@
+{
+  "name": "javascript-alogithms",
+  "version": "1.0.0",
+  "description": "Hands on with data-structures and algorithms in JS",
+  "main": "index.html",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pabhishek09/javascript-alogithms.git"
+  },
+  "author": "pabhisek.2009@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pabhishek09/javascript-alogithms/issues"
+  },
+  "homepage": "https://github.com/pabhishek09/javascript-alogithms#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "assert": "^2.0.0"
+  }
+}

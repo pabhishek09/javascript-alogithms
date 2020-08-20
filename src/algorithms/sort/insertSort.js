@@ -1,4 +1,4 @@
-write('Insertion sort'); 
+document.write('<p>Insert sort</p>');
 
 function insertionSort(inputArray) {
   for(let outerLoop = 1; outerLoop < inputArray.length; outerLoop++)  {
@@ -12,4 +12,4 @@ function insertionSort(inputArray) {
   return inputArray;
 }
 
-expect(insertionSort(unsortedArray.slice())).toEqual(sortedArray);
+export default insertionSort;
