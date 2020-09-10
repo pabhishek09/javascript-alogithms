@@ -5,7 +5,7 @@ document.write('<p>Quick sort</p>');
 // Break down and then merge
 
 function quickSort(inputArr) {
-  console.log('Quick sort called with', inputArr.slice());
+  console.log('quickSort input', inputArr.slice());
   if (inputArr.length < 2) {
     return inputArr;
   }

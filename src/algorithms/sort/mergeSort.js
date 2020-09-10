@@ -5,7 +5,7 @@ document.write('<p>Merge sort</p>');
 // Write a stiching  algorithm to merge the smaller arrays into a single sorted array
 
 function mergeSort(inputArr) {
-  console.log('Merge Sort called with', inputArr.slice());
+  console.log('mergeSort input', inputArr.slice());
   if (inputArr.length < 2) {
     return inputArr;
   }
@@ -15,8 +15,6 @@ function mergeSort(inputArr) {
   const left = inputArr.slice(0, middle);
   const right = inputArr.slice(middle);
   
-  console.log({left, right});
-
   const sortedLeft = mergeSort(left.slice());
   const sortedRight = mergeSort(right.slice());
 
@@ -27,7 +25,6 @@ function stitch(stichLeft, stichRight) {
   console.log('Stiching algorithm was called with',  stichLeft.slice(), stichRight.slice());
   const results = [];
   while (stichLeft.length && stichRight.length) {
-    
     if (stichLeft[0] <= stichRight[0]) {
       results.push(stichLeft.shift());
     }
@@ -35,7 +32,6 @@ function stitch(stichLeft, stichRight) {
       results.push(stichRight.shift());
     }
   }
-  
   return results.concat(stichLeft, stichRight);
 }
 

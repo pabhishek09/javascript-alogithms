@@ -1,6 +1,7 @@
 document.write('<p>Insert sort</p>');
 
 function insertionSort(inputArray) {
+  console.log('insertionSort input', inputArray);
   for(let outerLoop = 1; outerLoop < inputArray.length; outerLoop++)  {
     for (let innerLoop = 0; innerLoop < outerLoop; innerLoop++) {
       if (inputArray[outerLoop] < inputArray[innerLoop]) {
@@ -9,6 +10,7 @@ function insertionSort(inputArray) {
       }
     }
   }
+  console.log('insertionSort output', inputArray);
   return inputArray;
 }
 

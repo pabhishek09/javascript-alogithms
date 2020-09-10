@@ -2,27 +2,20 @@ document.write('<p>Bubble sort</p>');
 
 function bubbleSort(inputArr) {
   console.log('Bubble sort input', inputArr.slice());
-  const sortedArray = [];
-  inputArr.forEach((elem, index) => {
-    if (index === 0) {
-      sortedArray.push(elem);
-    } else if (elem > sortedArray[index-1]) {
-      sortedArray[index] = elem;
-    } else {
-      let sortCounter = index - 1;
-      while(sortCounter >= 0) {
-        if (elem > sortedArray[sortCounter]) {
-           break;
-        }
-        const tempElement = sortedArray[sortCounter];
-        sortedArray[sortCounter] = elem;
-        sortedArray[sortCounter + 1] = tempElement;
-        sortCounter--;
+  let didSort = true;
+  while(didSort) {
+    didSort = false;
+    for (let index = 0; index < inputArr.length - 1 ; index++) {
+			if (inputArr[index] > inputArr[index + 1]) {
+        didSort = true;
+        const greaterVal = inputArr[index];
+        inputArr[index] = inputArr[index + 1];
+        inputArr[index + 1] = greaterVal;
       }
     }
-  });
-  console.log('Bubble sort output', sortedArray.slice());
-  return sortedArray;
+  }
+  console.log('bubble sort output', inputArr);
+	return inputArr;
 }
 
 export default bubbleSort;
