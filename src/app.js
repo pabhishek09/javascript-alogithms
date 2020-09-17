@@ -1,2 +1,3 @@
-import './algorithms/algorithms.js';
+
 import './data-structures/ds';
+import './algorithms/algorithms.js';

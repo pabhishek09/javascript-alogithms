@@ -8,7 +8,6 @@ import quickSort from './quickSort';
 const unsortedArray = [ 10, 5, 2, 9, 8, 7 ];
 const sortedArray = [ 2, 5, 7, 8, 9,];
 
-document.write('<h4>Sorting algorithms<h4>');
 
 console.log(unsortedArray);
 assert.notStrictEqual(bubbleSort(unsortedArray.slice()), sortedArray);

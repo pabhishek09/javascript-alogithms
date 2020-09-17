@@ -1,5 +1,3 @@
-document.write('<p>Insert sort</p>');
-
 function insertionSort(inputArray) {
   console.log('insertionSort input', inputArray);
   for(let outerLoop = 1; outerLoop < inputArray.length; outerLoop++)  {

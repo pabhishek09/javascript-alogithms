@@ -12,6 +12,7 @@ function LinkedList()  {
 }
 
 LinkedList.prototype.add = function(value)  {
+  this.length++;
   const newNode = new Node(value);
   if (!this.head) {
     this.head = newNode;
@@ -32,7 +33,7 @@ LinkedList.prototype.search = function(value) {
   return null;
 }
 
-LinkedList.prototypereverse = function() {
+LinkedList.prototype.reverse = function() {
   if (!this.head.next) {
     this.head;
   }

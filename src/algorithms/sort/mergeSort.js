@@ -1,5 +1,3 @@
-document.write('<p>Merge sort</p>');
-
 // [5, 7, 4, 6, 2, 9, 3] - Divide into two arrays from a median element
 // [5, 7, 4] [6, 2, 9, 3] - Break it down to smaller arrays 
 // Write a stiching  algorithm to merge the smaller arrays into a single sorted array

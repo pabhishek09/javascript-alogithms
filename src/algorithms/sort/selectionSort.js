@@ -1,5 +1,3 @@
-document.write('<p>Selection sort</p>');
-
 function selectionSort(inputArr) {
   console.log('Selection sort input', inputArr.slice());
   for (let index=0; index < inputArr.length; index++) {

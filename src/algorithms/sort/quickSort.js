@@ -1,5 +1,3 @@
-document.write('<p>Quick sort</p>');
-
 // [5, 7, 4, 6, 2, 9, 3] - Last element becomes the pivot
 // [2] 3 [5, 7, 4, 6, 9] - Create array of elements smaller and greater than the pivot
 // Break down and then merge

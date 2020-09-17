@@ -1,5 +1,3 @@
-document.write('<p>Bubble sort</p>');
-
 function bubbleSort(inputArr) {
   console.log('Bubble sort input', inputArr.slice());
   let didSort = true;
